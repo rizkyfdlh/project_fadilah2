@@ -28,15 +28,23 @@ $alamat = "cibaduyut";
     return view('data_diri', compact('nama','jenis_kelamin','pendidikan_terakhir','pekerjaan','alamat'));
 });
 
-Route::get('/bio', function () {
+Route::get('/bebas', function () {
 $nama = "fadilah";
 $umur = "18";
 $tanggal_lahir = "bandung_20_juli";
-$d = "pelajar";
-$e = "jederal_kopasus";
-$f = "bermain cewe";
+$kesibukan = "pelajar";
+$cita_cita = "jederal_kopasus";
+$hobi = "bermain cewe";
 
-    return view('fadil');
-
-    
+    return view('data_fadilah', compact('nama','umur','tanggal_lahir','kesibukan','cita_cita','hobi'));    
 });
+
+Route::get('/about2/{nama}/{jenis_kelamin2}/{pendidikan}/{pekerja}/{alamat}', function (Request $request,$nama, $jenis_kelamin2, $pendidikan,$pekerja, $alamat) {
+    $nama1 = $nama;
+    $jenis_kelamin2 = $jenis_kelamin2;
+    $pendidikan = $pendidikan;
+    $pekerja = $pekerja;
+    $alamat = $alamat;
+    return view('biodata2', compact('nama1','jenis_kelamin2','pendidikan','pekerja','alamat'));
+});
+

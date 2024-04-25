@@ -14,13 +14,13 @@
         <tr>
             <td>nama</td>
             <td>:</td>
-            <td>{{ $a }}</td>
+            <td>{{ $nama }}</td>
         </tr>
 
         <tr>
             <td>umur</td>
             <td>:</td>
-            <td>{{ $b }}</td>
+            <td>{{ $umur }}</td>
         </tr>
 
         <tr>
@@ -29,22 +29,22 @@
         <tr>
             <td>tanggal_lahir</td>
             <td>:</td>
-            <td>{{ $c }}</td>
+            <td>{{ $tanggal_lahir}}</td>
         </tr>
         <tr>
             <td>kesibukan</td>
             <td>:</td>
-            <td>{{ $d}}</td>
+            <td>{{ $kesibukan}}</td>
         </tr>
         <tr>
             <td>cita_cita</td>
             <td>:</td>
-            <td>{{ $e}}</td>
+            <td>{{ $cita_cita}}</td>
         </tr>
         <tr>
             <td>hobi</td>
             <td>:</td>
-            <td>{{ $f }}</td>
+            <td>{{ $hobi }}</td>
         </tr>
     </table>
     </center>
